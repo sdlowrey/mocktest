@@ -10,7 +10,7 @@ func main() {
 	foos := make([]*foo.Foo, 3)
 
 	for f := range foos {
-		foos[f] = foo.New()
+		foos[f] = foo.New("rando")
 	}
 
 	for f := range foos {

@@ -40,3 +40,9 @@ func (s *FooSuite) TestInit(c *check.C) {
 	f := New(content)
 	c.Assert(f.Content, check.Equals, content)
 }
+
+func (s *FooSuite) TestGetters(c *check.C) {
+	content := "wut"
+	f := New(content)
+	c.Assert(f.GetContent(), check.Equals, content)
+}
