@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	foos := make([]*foo.Foo, 3)
+	foos := make([]*foo.SimpleFoo, 3)
 
 	for f := range foos {
 		foos[f] = foo.New("rando")
